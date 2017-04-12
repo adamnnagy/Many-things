@@ -4,7 +4,7 @@ var defaultDiameter = 1;
 var speed = 0.1;
 var myAnimation;
 var someText = ". Never gonna give you up Never gonna let you down Never gonna run around and desert you Never gonna make you cry Never gonna say goodbye Never gonna tell a lie and hurt you";
-
+//var img = createImage("myGif.gif");
 
 var someLyrics = someText.split(" ");
 
@@ -81,6 +81,7 @@ Animation.prototype.display = function () {
   if (this.counter > 0) {
     fill(219, 63, 203);
     text(someLyrics[(myAnimation.counter%(someLyrics.length))].toUpperCase(), windowWidth/2, windowHeight/2);
+//    img.position(width/2, height/2 - 100);
   }
 };
 
